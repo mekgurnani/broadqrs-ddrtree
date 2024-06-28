@@ -219,7 +219,7 @@ color_map1 = {
     "forestgreen": (34, 139, 34),
     "darkgreen": (0, 100, 0),
     "limegreen": (50, 205, 50),
-    "aquamarine": (127, 255, 212),
+    "darkseagreen": (143, 188, 143),
     "mediumseagreen": (60, 179, 113),
     
     "lightseagreen": (32, 178, 170),
@@ -255,7 +255,7 @@ color_map_rgb = {
     "Higher risk IVCD (Phenogroup 3): branch start": "forestgreen",
     "Higher risk IVCD (Phenogroup 3): branch end": "darkgreen",
     "Higher risk IVCD (Phenogroup 3): right sub-branch": "limegreen",
-    "Higher risk IVCD (Phenogroup 3): left sub-branch start": "aquamarine",
+    "Higher risk IVCD (Phenogroup 3): left sub-branch start": "darkseagreen",
     "Higher risk IVCD (Phenogroup 3): left sub-branch end": "mediumseagreen",
     
     "Average branch RBBB (Phenogroup 4) branch end": "lightseagreen",
@@ -334,7 +334,7 @@ def update_hover_plot(hoverData):
         return {
             'data': [], 'layout': {
                 'annotations': [{'x': 3, 'y': 1.5, 'text': "Hover over a point on the tree to see the reconstructed ECG.", 'showarrow': False, 'font': {'size': 13, 'color': 'black'}}],
-                'xaxis': {'visible': False}, 'yaxis': {'visible': False}, 'width': 400, 'height': 600
+                'xaxis': {'visible': False}, 'yaxis': {'visible': False}, 'width': 500, 'height': 600
             }
         }
 
