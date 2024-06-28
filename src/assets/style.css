@@ -1,0 +1,6 @@
+/* assets/style.css */
+textarea.no-border {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;  /* In case there are any box-shadow styles */
+}

@@ -139,11 +139,6 @@ branch_map = {
     4: 'Average branch RBBB (Phenogroup 4)', 5: 'Lower risk RBBB (Phenogroup 5)', 6: 'Higher risk RBBB (Phenogroup 6)'
 }
 
-color_map1 = {
-    'firebrick': (178, 34, 34), 'goldenrod': (218, 165, 32), 'forestgreen': (34, 139, 34), 'lightseagreen': (32, 178, 170),
-    'royalblue': (65, 105, 225), 'orchid': (218, 112, 214)
-}
-
 pheno_tips_map = {
     "pheno1_left1": "Higher risk LBBB (Phenogroup 1): left sub-branch start", 
     "pheno1_left2": "Higher risk LBBB (Phenogroup 1): left sub-branch end", 
@@ -208,36 +203,76 @@ tips_type_map = {
 
 }
 
-color_map_new = {
-"Higher risk LBBB (Phenogroup 1): left sub-branch start" : "firebrick", 
-"Higher risk LBBB (Phenogroup 1): left sub-branch end" : "firebrick", 
-"Higher risk LBBB (Phenogroup 1): right sub-branch start" : "firebrick", 
-"Higher risk LBBB (Phenogroup 1): right sub-branch end" : "firebrick", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): branch start" : "goldenrod", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #1" : "goldenrod", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #2 start" : "goldenrod", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #2 end" : "goldenrod", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): right sub-branch" : "goldenrod", 
-"Higher risk LBBB/NSIVCD (Phenogroup 2): branch end" : "goldenrod", 
-"Higher risk IVCD (Phenogroup 3): branch start" : "forestgreen", 
-"Higher risk IVCD (Phenogroup 3): branch end" : "forestgreen", 
-"Higher risk IVCD (Phenogroup 3): right sub-branch" : "forestgreen", 
-"Higher risk IVCD (Phenogroup 3): left sub-branch start" : "forestgreen", 
-"Higher risk IVCD (Phenogroup 3): left sub-branch end" : "forestgreen", 
-"Average branch RBBB (Phenogroup 4) branch end" : "lightseagreen", 
-"Average branch RBBB (Phenogroup 4) branch core" : "lightseagreen", 
-"Average branch RBBB (Phenogroup 4) branch start": "lightseagreen",  
-"Lower risk RBBB (Phenogroup 5) branch start" : "royalblue", 
-"Lower risk RBBB (Phenogroup 5) left sub-branch #1": "royalblue", 
-"Lower risk RBBB (Phenogroup 5) right sub-branch #1 start" : "royalblue",  
-"Lower risk RBBB (Phenogroup 5) right sub-branch #2 end" : "royalblue", 
-"Lower risk RBBB (Phenogroup 5) left sub-branch #4" : "royalblue", 
-"Lower risk RBBB (Phenogroup 5) right sub-branch #2" : "royalblue", 
-"Lower risk RBBB (Phenogroup 5) branch end" : "royalblue", 
-"Higher risk RBBB (Phenogroup 6) branch start" : "orchid", 
-"Higher risk RBBB (Phenogroup 6) branch core" : "orchid", 
-"Higher risk RBBB (Phenogroup 6) branch end" : "orchid"
+color_map1 = {
+    "firebrick": (178, 34, 34),
+    "indianred": (205, 92, 92),
+    "crimson": (220, 20, 60),
+    "salmon": (250, 128, 114),
+    
+    "goldenrod": (218, 165, 32),
+    "darkgoldenrod": (184, 134, 11),
+    "gold": (255, 215, 0),
+    "darkkhaki": (189, 183, 107),
+    "orange": (255, 165, 0),
+    "yellow": (255, 255, 0),
+    
+    "forestgreen": (34, 139, 34),
+    "darkgreen": (0, 100, 0),
+    "limegreen": (50, 205, 50),
+    "aquamarine": (127, 255, 212),
+    "mediumseagreen": (60, 179, 113),
+    
+    "lightseagreen": (32, 178, 170),
+    "mediumaquamarine": (102, 205, 170),
+    "turquoise": (64, 224, 208),
+    
+    "royalblue": (65, 105, 225),
+    "mediumblue": (0, 0, 205),
+    "dodgerblue": (30, 144, 255),
+    "skyblue": (135, 206, 235),
+    "deepskyblue": (0, 191, 255),
+    "cornflowerblue": (100, 149, 237),
+    "steelblue": (70, 130, 180),
+    
+    "orchid": (218, 112, 214),
+    "mediumorchid": (186, 85, 211),
+    "darkorchid": (153, 50, 204)
+}
 
+color_map_rgb = {
+    "Higher risk LBBB (Phenogroup 1): left sub-branch start": "firebrick",
+    "Higher risk LBBB (Phenogroup 1): left sub-branch end": "indianred",
+    "Higher risk LBBB (Phenogroup 1): right sub-branch start": "crimson",
+    "Higher risk LBBB (Phenogroup 1): right sub-branch end": "salmon",
+    
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): branch start": "goldenrod",
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #1": "darkgoldenrod",
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #2 start": "gold",
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): left sub-branch #2 end": "darkkhaki",
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): right sub-branch": "orange",
+    "Higher risk LBBB/NSIVCD (Phenogroup 2): branch end": "yellow",
+    
+    "Higher risk IVCD (Phenogroup 3): branch start": "forestgreen",
+    "Higher risk IVCD (Phenogroup 3): branch end": "darkgreen",
+    "Higher risk IVCD (Phenogroup 3): right sub-branch": "limegreen",
+    "Higher risk IVCD (Phenogroup 3): left sub-branch start": "aquamarine",
+    "Higher risk IVCD (Phenogroup 3): left sub-branch end": "mediumseagreen",
+    
+    "Average branch RBBB (Phenogroup 4) branch end": "lightseagreen",
+    "Average branch RBBB (Phenogroup 4) branch core": "mediumaquamarine",
+    "Average branch RBBB (Phenogroup 4) branch start": "turquoise",
+    
+    "Lower risk RBBB (Phenogroup 5) branch start": "royalblue",
+    "Lower risk RBBB (Phenogroup 5) left sub-branch #1": "mediumblue",
+    "Lower risk RBBB (Phenogroup 5) right sub-branch #1 start": "dodgerblue",
+    "Lower risk RBBB (Phenogroup 5) right sub-branch #2 end": "skyblue",
+    "Lower risk RBBB (Phenogroup 5) left sub-branch #4": "deepskyblue",
+    "Lower risk RBBB (Phenogroup 5) right sub-branch #2": "cornflowerblue",
+    "Lower risk RBBB (Phenogroup 5) branch end": "steelblue",
+    
+    "Higher risk RBBB (Phenogroup 6) branch start": "orchid",
+    "Higher risk RBBB (Phenogroup 6) branch core": "mediumorchid",
+    "Higher risk RBBB (Phenogroup 6) branch end": "darkorchid"
 }
 
 broadqrs_ddrtree['phenogroup'] = broadqrs_ddrtree['merged_branchcoords'].map(branch_map)
@@ -252,7 +287,7 @@ broadqrs_ddrtree['formatted_tips_type'] = broadqrs_ddrtree['tips_type_nice'].app
 
 
 # broadqrs_ddrtree['color'] = broadqrs_ddrtree['merged_branchcoords'].map(color_map).fillna('gray')
-broadqrs_ddrtree['color_new'] = broadqrs_ddrtree['tips_type_nice'].map(color_map_new).fillna('gray')
+broadqrs_ddrtree['color_new'] = broadqrs_ddrtree['tips_type_nice'].map(color_map_rgb).fillna('gray')
 
 fig = go.Figure()
 fig.add_trace(go.Scattergl(
@@ -261,40 +296,34 @@ fig.add_trace(go.Scattergl(
     ), name='Scatter Points', hoverinfo='x+y+text', text=broadqrs_ddrtree['tips_type_nice']
 ))
 
-# fig.add_trace(go.Scattergl(
-#     x=broadqrs_ddrtree['Z1'], 
-#     y=broadqrs_ddrtree['Z2'], 
-#     mode='markers', 
-#     marker=dict(
-#         size=7, 
-#         color=broadqrs_ddrtree['color_new'], 
-#         opacity=0.7, 
-#         line=dict(width=1, color='black')
-#     ), 
-#     name='Scatter Points', 
-#     hoverinfo='x+y+text', 
-#     text=broadqrs_ddrtree['tips_type_nice'],
-#     hoverlabel=dict(
-#         bgcolor="white",  # Background color of the hover label
-#         font_size=12,     # Font size of the text in the hover label
-#         align='left',     # Alignment of text within the hover label
-#         bordercolor="black",  # Border color of the hover label
-#         width=300         # Width of the hover label in pixels
-#     )
-# ))
-
 fig.update_layout(
     title='Broad QRS DDRTree', xaxis_title='Dimension 1', yaxis_title='Dimension 2',
     width=700, height=700, font=dict(size=15)
 )
 
+# app.layout = html.Div([
+#     html.H1(children='Visualising ECGs from the broad QRS DDRTree', style={'textAlign': 'center',
+#                                                                            'fontFamily': 'Open Sans'}),
+#     html.Div([
+#         dcc.Graph(id='scatter-plot', figure=fig),
+#         dcc.Graph(id='hover-data-plot', style={'margin-top': '1px'})
+#     ], style={'display': 'flex'})
+# ])
+
 app.layout = html.Div([
     html.H1(children='Visualising ECGs from the broad QRS DDRTree', style={'textAlign': 'center'}),
+    dcc.Textarea(
+            id='textarea-example',
+            value='The broad QRS DDRTree trajectory from the paper is shown on the left.\n There are six main phenogroups within the tree and this visualisation shows different regions within these groups.\n As you hover the different regions within a phenogroup (indicated by varying shades of a color group), the average median beat 12-lead ECG for the selected region will update on the right.\n ',
+            style={'width': '100%', 'height': 70,'textAlign': 'center', 'fontSize': 13},
+            className='no-border',
+        ),                                                                           
     html.Div([
         dcc.Graph(id='scatter-plot', figure=fig),
         dcc.Graph(id='hover-data-plot', style={'margin-top': '1px'})
     ], style={'display': 'flex'})
 ])
+
 
 @app.callback(
     Output('hover-data-plot', 'figure'),
@@ -320,9 +349,11 @@ def update_hover_plot(hoverData):
     point_color_name = hoverData['points'][0]['marker.color']
     rgb_color = color_map1.get(point_color_name)
     plotly_color = f'rgb{rgb_color}'
+    # color = broadqrs_ddrtree['color_new'].iloc[point_index]
+    # plotly_color = f'rgb{color}'
     fig_plotly['layout']['title'].update(text=f"Reconstructed ECG - {phenogroup}", font=dict(color=plotly_color, size=15))
 
     return fig_plotly
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8050)
+    app.run_server(host='0.0.0.0', port=8055)
