@@ -314,7 +314,7 @@ app.layout = html.Div([
     html.H1(children='Visualising ECGs from the broad QRS DDRTree', style={'textAlign': 'center'}),
     dcc.Textarea(
             id='textarea-example',
-            value='The broad QRS DDRTree trajectory is shown on the left. There are six main phenogroups within the tree and different regions within these phenogroups are indicated by varying shades of a colour group.\n As you hover the different regions, the average median beat 12-lead ECG for the selected region will update on the right.\n This may take a few seconds to load each time you move between regions, please be patient until the text above the ECG plot updates with your region of interest.\n\n Note - adjust your screen accordingly to see all 12-leads.',
+            value='The broad QRS DDRTree trajectory is shown on the left. There are six main phenogroups within the tree and different regions within these phenogroups are indicated by varying shades of a colour group.\n As you hover over the different regions, the average median beat 12-lead ECG for the selected region will update on the right.\n This may take a few seconds to load each time you move between regions, please be patient until the text above the ECG plot updates with your region of interest.\n\n Note - adjust your screen accordingly to see all 12-leads.',
             style={'width': '100%', 'height': 90,'textAlign': 'center', 'fontSize': 14},
             className='no-border',
         ),                                                                           
